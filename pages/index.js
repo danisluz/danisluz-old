@@ -2,7 +2,7 @@ import dynamic from "next/dynamic";
 import About from "../src/components/About";
 import Blog from "../src/components/Blog";
 import Contact from "../src/components/Contact";
-import Services from "../src/components/Services";
+import Expertise from "../src/components/Expertise";
 import TypingAnimation from "../src/components/TypingAnimation";
 import Layout from "../src/layout/Layout";
 const Portfolio = dynamic(() => import("../src/components/Portfolio"), {
@@ -21,26 +21,24 @@ const Index = () => {
             <div className="row full-screen align-items-center">
               <div className="col-lg-6">
                 <div className="type-box">
-                  <h6>Hello, I am</h6>
-                  <h1 className="font-alt">Sergio Gadot</h1>
+                  <h6>Bonjour je suis</h6>
+                  <h1 className="font-alt">Daniel Luz</h1>
                   <p className="lead">
-                    I Am Passionate <TypingAnimation />
+                    Je suis un <TypingAnimation /> passionné!
                   </p>
                   <p className="desc">
-                    I design and develop services for customers of all sizes,
-                    specializing in creating stylish, modern websites, web
-                    services and online stores.
+                    Je suis un analyste développeur Front-End passionné par la technologie et l'innovation, avec une solide expérience dans les domaines du design et du développement web.
                   </p>
                   <div className="btn-bar">
-                    <a className="px-btn px-btn-theme" href="#">
-                      Donwload CV
+                    <a className="px-btn px-btn-theme" href="static/pdf/curriculum-developpeur-front-end.pdf" target="_blank">
+                      Télécharger CV
                     </a>
                   </div>
                 </div>
               </div>
               <div className="col-lg-6">
                 <div className="hb-img">
-                  <img src="static/img/home-banner.png" title="" alt="" />
+                  <img src="static/img/banner-daniel.png" title="" alt="" />
                 </div>
               </div>
             </div>
@@ -52,14 +50,8 @@ const Index = () => {
       <About />
       {/* End about us */}
       {/* Services */}
-      <Services />
+      <Expertise />
       {/* End Services */}
-      {/* Portfolio */}
-      <Portfolio />
-      {/* End Portfolio */}
-      {/* Blog */}
-      <Blog />
-      {/* End Blog */}
       {/* Contact us */}
       <Contact />
     </Layout>

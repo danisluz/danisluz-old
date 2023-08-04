@@ -136,6 +136,8 @@ const About = () => {
             </div>
           </div>
         </div>
+
+        
         <div className="separated" />
         <div className="title">
           <h3>Experience.</h3>

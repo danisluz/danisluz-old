@@ -14,7 +14,7 @@ const Header = ({ blog }) => {
         <div className="d-flex">
           <div className="navbar-brand">
             <Link href="/">
-              <a className="logo-text">Sergio</a>
+              <a className="logo-text">Daniel Luz</a>
             </Link>
           </div>
           <button
@@ -40,26 +40,23 @@ const Header = ({ blog }) => {
               <div className="img">
                 <img src="static/img/about-me.jpg" title="" alt="" />
               </div>
-              <h5>Sergiobi</h5>
+              <h5>Daniel Luz</h5>
             </div>
           </div>
           {blog ? <MenuWithBlog /> : <MenuWithOutBlog />}
         </div>
         <div className="nav justify-content-center social-icons">
-          <a href="#">
+          <a href="https://www.facebook.com/danielsluz" target="_blank">
             <i className="fab fa-facebook-f" />
           </a>
-          <a href="#">
-            <i className="fab fa-twitter" />
-          </a>
-          <a href="#">
+          <a href="https://www.instagram.com/danisluz/" target="_blank">
             <i className="fab fa-instagram" />
           </a>
-          <a href="#">
+          <a href="https://www.linkedin.com/in/danisluz/" target="_blank">
             <i className="fab fa-linkedin-in" />
           </a>
-          <a href="#">
-            <i className="fab fa-pinterest" />
+          <a href="https://github.com/danisluz" target="_blank">
+            <i className="fab fa-github" />
           </a>
         </div>
       </header>
@@ -80,31 +77,19 @@ const MenuWithOutBlog = () => {
       <li data-menuanchor="about">
         <a className="nav-link" href="#about">
           <i className="ti-id-badge" />
-          <span>About Me</span>
+          <span>Sur moi</span>
         </a>
       </li>
       <li data-menuanchor="services">
-        <a className="nav-link" href="#services">
+        <a className="nav-link" href="#expertise">
           <i className="ti-panel" />
-          <span>Services</span>
-        </a>
-      </li>
-      <li data-menuanchor="work">
-        <a className="nav-link" href="#work">
-          <i className="ti-bookmark-alt" />
-          <span>Portfolio</span>
-        </a>
-      </li>
-      <li data-menuanchor="blog" className="blog">
-        <a className="nav-link" href="#blog">
-          <i className="ti-layout-media-overlay-alt-2" />
-          <span>Blogs</span>
+          <span>Expertises</span>
         </a>
       </li>
       <li data-menuanchor="contactus">
         <a className="nav-link" href="#contactus">
           <i className="ti-map-alt" />
-          <span>Contact Me</span>
+          <span>Contactez moi</span>
         </a>
       </li>
     </ul>
