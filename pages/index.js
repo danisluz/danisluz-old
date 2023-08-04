@@ -5,6 +5,7 @@ import Contact from "../src/components/Contact";
 import Expertise from "../src/components/Expertise";
 import TypingAnimation from "../src/components/TypingAnimation";
 import Layout from "../src/layout/Layout";
+import Experience from '../src/components/Experience';
 const Portfolio = dynamic(() => import("../src/components/Portfolio"), {
   ssr: false,
 });
@@ -46,13 +47,10 @@ const Index = () => {
         </div>
       </section>
       {/* End Home */}
-      {/* about us */}
+
       <About />
-      {/* End about us */}
-      {/* Services */}
+      <Experience />
       <Expertise />
-      {/* End Services */}
-      {/* Contact us */}
       <Contact />
     </Layout>
   );

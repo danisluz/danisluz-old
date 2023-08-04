@@ -24,10 +24,10 @@ const Contact = () => {
     } else {
       emailjs
         .send(
-          "service_seruhwu", // service id
-          "template_21aw58z", // template id
+          "service_8p3152d", // service id
+          "template_2398jih", // template id
           mailData,
-          "Q3pccdLZhU-mZT7tQ" // public api
+          "xrse7rO5XoPMQJPeH" // public api
         )
         .then(
           (response) => {
@@ -54,37 +54,36 @@ const Contact = () => {
     >
       <div className="container">
         <div className="title">
-          <h3>Get in touch.</h3>
+          <h3>Entrer en contact.</h3>
         </div>
         <div className="row">
           <div className="col-lg-5 col-xl-4 m-15px-tb">
             <div className="contact-info">
-              <h4>What’s your story? Get in touch</h4>
+              <h4>Quelle est ton histoire? Entrer en contact</h4>
               <p>
-                Always available for freelancing if the right project comes
-                along, Feel free to contact me.
+                N'hésitez pas à me contacter.
               </p>
               <ul>
                 <li className="media">
                   <i className="ti-map" />
                   <span className="media-body">
-                    123 Stree New York City , United States Of America 750065.
+                    Montreal, QC , Canadá.
                   </span>
                 </li>
                 <li className="media">
                   <i className="ti-email" />
-                  <span className="media-body">support@domain.com</span>
+                  <span className="media-body">danisluz@gmail.com</span>
                 </li>
                 <li className="media">
                   <i className="ti-mobile" />
-                  <span className="media-body">+044 9696 9696 3636</span>
+                  <span className="media-body">+1 438 365 3251</span>
                 </li>
               </ul>
             </div>
           </div>
           <div className="col-lg-7 col-xl-8 m-15px-tb">
             <div className="contact-form">
-              <h4>Say Something</h4>
+              <h4>Dire quelque chose</h4>
               <form id="contact-form" onSubmit={(e) => onSubmit(e)}>
                 <div className="row">
                   <div className="col-md-6">
@@ -94,7 +93,7 @@ const Contact = () => {
                         onChange={(e) => onChange(e)}
                         value={name}
                         id="name"
-                        placeholder="Name *"
+                        placeholder="Non *"
                         className={`form-control ${
                           error ? (!name ? "invalid" : "") : ""
                         }`}
@@ -124,7 +123,7 @@ const Contact = () => {
                         onChange={(e) => onChange(e)}
                         value={subject}
                         id="subject"
-                        placeholder="Subject *"
+                        placeholder="Suject *"
                         className={`form-control ${
                           error ? (!subject ? "invalid" : "") : ""
                         }`}
@@ -139,7 +138,7 @@ const Contact = () => {
                         onChange={(e) => onChange(e)}
                         value={message}
                         id="message"
-                        placeholder="Your message *"
+                        placeholder="Votre message *"
                         rows={5}
                         className={`form-control ${
                           error ? (!message ? "invalid" : "") : ""
@@ -161,7 +160,7 @@ const Contact = () => {
                       <input
                         className="px-btn px-btn-theme"
                         type="submit"
-                        value="send message"
+                        value="envoyer le message"
                       />
                     </div>
                     <span
@@ -172,14 +171,14 @@ const Contact = () => {
                           error !== null ? (!error ? "block" : "none") : "none",
                       }}
                     >
-                      Message Sent Successfully
+                      Message envoyé avec succès
                     </span>
                     <span
                       id="err_message"
                       className="text-danger"
                       style={{ display: "none" }}
                     >
-                      Message Sending Failed
+                      Échec de l'envoi du message
                     </span>
                   </div>
                 </div>

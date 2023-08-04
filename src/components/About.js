@@ -6,6 +6,7 @@ const About = () => {
       className="pp-section pp-scrollable section counter"
     >
       <div className="container">
+
         <div className="row align-items-center justify-content-center">
           <div className="col-lg-6 m-15px-tb">
             <div className="about-me">
@@ -19,200 +20,131 @@ const About = () => {
           <div className="col-lg-6 m-15px-tb">
             <div className="about-info">
               <div className="title">
-                <h3>About me.</h3>
+                <h3>Sur moi.</h3>
               </div>
               <div className="about-text">
                 <h3>
-                  {`I'm`} a Freelancer Front-end Developer with over 3 years of
-                  experience.{" "}
+                  {`Je suis`} un développeur JavaScript full stack passionné par la création de solutions technologiques innovantes.{" "}
                 </h3>
                 <p>
-                  {`I'm`} a Freelancer Front-end Developer with over 3 years of
-                  experience. {`I'm`} from San Francisco. I code and create web
-                  elements for amazing people around the world. I like work with
-                  new people. New people new Experiences.
+                  Ces dernières années, j'ai renforcé mes compétences en développement web, notamment dans les frameworks Angular, React et Node.JS. Mon parcours a débuté dans la création publicitaire, mais mon intérêt pour le développement Front-End m'a amené à travailler sur des projets stimulants chez Mirante Tecnologia avec l'équipe de développement du client INCRA.GOV(Gouvernement brésilien).
                 </p>
-                <div className="row">
-                  <div className="col-auto">
-                    <div className="media align-items-center">
-                      <span className="count">5k</span>
-                      <div className="media-body">
-                        Projects <br />
-                        Completed.
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-auto">
-                    <div className="media align-items-center">
-                      <span className="count">3k</span>
-                      <div className="media-body">
-                        Satisfied <br />
-                        Clients.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="btn-bar">
-                  <a className="px-btn px-btn-theme" href="#">
-                    <span>Contact Me</span>
-                  </a>
-                  <a className="px-btn px-btn-theme" href="#">
-                    <span>Portfolio</span>
-                  </a>
-                </div>
+                <p>
+                  En dehors du développement, j'aime enseigner le design et le développement web. Mon objectif est de continuer à apprendre et à évoluer dans le domaine de la technologie, en recherchant constamment de nouveaux défis et opportunités. Si vous cherchez un professionnel dévoué, passionné et polyvalent, je suis ouvert à de nouvelles connexions et opportunités de collaboration. Mettons-nous en contact et explorons ensemble de nouvelles possibilités!
+                </p>
               </div>
             </div>
           </div>
         </div>
+
         <div className="separated" />
+
         <div className="title">
-          <h3>Education &amp; Skills</h3>
+          <h3>Éducation &amp; Compétences</h3>
         </div>
         <div className="row">
           <div className="col-lg-4 m-15px-tb">
             <ul className="aducation-box">
               <li>
-                <span>2010-2012</span>
-                <h6>Graphic Designer</h6>
-                <p>International Design Institute</p>
+                <span>2013-2015</span>
+                <h6>Production Multimédia</h6>
+                <p>Collège SENAC, RS, Brésil</p>
               </li>
               <li>
-                <span>2010-2012</span>
-                <h6>Web Development</h6>
-                <p>International Design Institute</p>
-              </li>
-              <li>
-                <span>2010-2012</span>
-                <h6>Search Engine Optimization</h6>
-                <p>International Design Institute</p>
+                <span>2007-2008</span>
+                <h6>Technicien Web Design</h6>
+                <p>École SENAI, RS, Brésil</p>
               </li>
             </ul>
           </div>
           <div className="col-lg-7 ml-auto m-15px-tb">
             <div className="skills-box">
-              <h3>My skills</h3>
-              <p>
-                {`I'm`} a Freelancer Front-end Developer with over 3 years of
-                experience. I code and create web elements for amazing people
-                around the world. I like work with new people. New people new
-                Experiences.
-              </p>
+              <h3>Compétences</h3>
               <div className="skill-lt">
-                <h6>HTML5</h6>
-                <div className="skill-bar">
-                  <div className="skill-bar-in" style={{ width: "92%" }}>
-                    <span data-toggle="tooltip" title="92%" />
+                  <h6>HTML 5</h6>
+                  <div className="skill-bar">
+                    <div className="skill-bar-in" style={{ width: "95%" }}>
+                      <span data-toggle="tooltip" title="952%" />
+                    </div>
                   </div>
                 </div>
-              </div>
-              {/* /skill */}
-              <div className="skill-lt">
-                <h6>WordPress</h6>
-                <div className="skill-bar">
-                  <div className="skill-bar-in" style={{ width: "72%" }}>
-                    <span data-toggle="tooltip" title="72%" />
+                {/* /skill */}
+                <div className="skill-lt">
+                  <h6>CSS 3</h6>
+                  <div className="skill-bar">
+                    <div className="skill-bar-in" style={{ width: "90%" }}>
+                      <span data-toggle="tooltip" title="90%" />
+                    </div>
                   </div>
                 </div>
-              </div>
-              {/* /skill */}
-              <div className="skill-lt">
-                <h6>Magento</h6>
-                <div className="skill-bar">
-                  <div className="skill-bar-in" style={{ width: "86%" }}>
-                    <span data-toggle="tooltip" title="86%" />
+                {/* /skill */}
+                <div className="skill-lt">
+                  <h6>JavaScript</h6>
+                  <div className="skill-bar">
+                    <div className="skill-bar-in" style={{ width: "85%" }}>
+                      <span data-toggle="tooltip" title="85%" />
+                    </div>
                   </div>
                 </div>
-              </div>
-              {/* /skill */}
-              <div className="skill-lt">
-                <h6>UI/UX</h6>
-                <div className="skill-bar">
-                  <div className="skill-bar-in" style={{ width: "88%" }}>
-                    <span data-toggle="tooltip" title="88%" />
+                {/* /skill */}
+                <div className="skill-lt">
+                  <h6>Angular</h6>
+                  <div className="skill-bar">
+                    <div className="skill-bar-in" style={{ width: "85%" }}>
+                      <span data-toggle="tooltip" title="85%" />
+                    </div>
                   </div>
                 </div>
-              </div>
-              {/* /skill */}
+                {/* /skill */}
+                <div className="skill-lt">
+                  <h6>React.js</h6>
+                  <div className="skill-bar">
+                    <div className="skill-bar-in" style={{ width: "75%" }}>
+                      <span data-toggle="tooltip" title="75%" />
+                    </div>
+                  </div>
+                </div>
+                {/* /skill */}
+                <div className="skill-lt">
+                  <h6>Node.js</h6>
+                  <div className="skill-bar">
+                    <div className="skill-bar-in" style={{ width: "50%" }}>
+                      <span data-toggle="tooltip" title="50%" />
+                    </div>
+                  </div>
+                </div>
+                {/* /skill */}
+                <div className="skill-lt">
+                  <h6>Bootstrap</h6>
+                  <div className="skill-bar">
+                    <div className="skill-bar-in" style={{ width: "80%" }}>
+                      <span data-toggle="tooltip" title="80%" />
+                    </div>
+                  </div>
+                </div>
+                {/* /skill */}
+                <div className="skill-lt">
+                  <h6>Sass/SCSS</h6>
+                  <div className="skill-bar">
+                    <div className="skill-bar-in" style={{ width: "80%" }}>
+                      <span data-toggle="tooltip" title="80%" />
+                    </div>
+                  </div>
+                </div>
+                {/* /skill */}
+                <div className="skill-lt">
+                  <h6>Less</h6>
+                  <div className="skill-bar">
+                    <div className="skill-bar-in" style={{ width: "60%" }}>
+                      <span data-toggle="tooltip" title="60%" />
+                    </div>
+                  </div>
+                </div>
+                {/* /skill */}
             </div>
           </div>
         </div>
 
-        
-        <div className="separated" />
-        <div className="title">
-          <h3>Experience.</h3>
-        </div>
-        <div className="resume-box">
-          <div className="resume-row">
-            <div className="row">
-              <div className="col-sm-3 col-md-3 col-xl-2">
-                <div className="rb-left">
-                  <img src="static/img/a1.png" title="" alt="" />
-                </div>
-              </div>
-              <div className="col-sm-9 col-md-9 col-xl-10">
-                <div className="rb-right">
-                  <h6>Front-end Developer</h6>
-                  <label>WeLab | Remote | Jan 2019 - Present</label>
-                  <div className="rb-time">Full Time</div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="resume-row">
-            <div className="row">
-              <div className="col-sm-3 col-md-3 col-xl-2">
-                <div className="rb-left">
-                  <img src="static/img/a2.png" title="" alt="" />
-                </div>
-              </div>
-              <div className="col-sm-9 col-md-9 col-xl-10">
-                <div className="rb-right">
-                  <h6>Front-end Developer</h6>
-                  <label>WeLab | Remote | Jan 2019 - Present</label>
-                  <div className="rb-time">Full Time</div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="resume-row">
-            <div className="row">
-              <div className="col-sm-3 col-md-3 col-xl-2">
-                <div className="rb-left">
-                  <img src="static/img/a3.png" title="" alt="" />
-                </div>
-              </div>
-              <div className="col-sm-9 col-md-9 col-xl-10">
-                <div className="rb-right">
-                  <h6>Front-end Developer</h6>
-                  <label>WeLab | Remote | Jan 2019 - Present</label>
-                  <div className="rb-time">Full Time</div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

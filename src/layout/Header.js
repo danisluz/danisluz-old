@@ -80,6 +80,12 @@ const MenuWithOutBlog = () => {
           <span>Sur moi</span>
         </a>
       </li>
+      <li data-menuanchor="about">
+        <a className="nav-link" href="#experience">
+          <i className="ti-bookmark-alt" />
+          <span>Expériences</span>
+        </a>
+      </li>
       <li data-menuanchor="services">
         <a className="nav-link" href="#expertise">
           <i className="ti-panel" />
