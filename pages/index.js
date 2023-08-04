@@ -1,14 +1,11 @@
 import dynamic from "next/dynamic";
 import About from "../src/components/About";
-import Blog from "../src/components/Blog";
 import Contact from "../src/components/Contact";
 import Expertise from "../src/components/Expertise";
 import TypingAnimation from "../src/components/TypingAnimation";
 import Layout from "../src/layout/Layout";
 import Experience from '../src/components/Experience';
-const Portfolio = dynamic(() => import("../src/components/Portfolio"), {
-  ssr: false,
-});
+
 const Index = () => {
   return (
     <Layout>

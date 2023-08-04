@@ -1,9 +1,3 @@
-import dynamic from "next/dynamic";
-
-const Testimonials = dynamic(() => import("./Testimonials"), {
-  ssr: false,
-});
-
 const Expertise = () => {
   return (
     <section
@@ -18,7 +12,7 @@ const Expertise = () => {
         <div className="row">
           <div className="col-sm-6 m-15px-tb">
             <div className="feature-box-01 media">
-              <i className="icon theme-bg icon-mobile" />
+              {/* <i className="icon theme-bg icon-browser" /> */}
               <div className="feature-content media-body">
                 <h5> HTML/CSS</h5>
                 <p>
@@ -29,7 +23,7 @@ const Expertise = () => {
           </div>
           <div className="col-sm-6 m-15px-tb">
             <div className="feature-box-01 media">
-              <i className="icon theme-bg icon-desktop" />
+              {/* <i className="icon theme-bg icon-paintbrush" /> */}
               <div className="feature-content media-body">
                 <h5>JavaScript</h5>
                 <p>
@@ -40,7 +34,7 @@ const Expertise = () => {
           </div>
           <div className="col-sm-6 m-15px-tb">
             <div className="feature-box-01 media">
-              <i className="icon theme-bg icon-target" />
+              {/* <i className="icon theme-bg icon-target" /> */}
               <div className="feature-content media-body">
                 <h5>Frameworks front-end</h5>
                 <p>
@@ -51,7 +45,7 @@ const Expertise = () => {
           </div>
           <div className="col-sm-6 m-15px-tb">
             <div className="feature-box-01 media">
-              <i className="icon theme-bg icon-mobile" />
+              {/* <i className="icon theme-bg icon-mobile" /> */}
               <div className="feature-content media-body">
                 <h5>APIs et intégrations</h5>
                 <p>
@@ -62,7 +56,7 @@ const Expertise = () => {
           </div>
           <div className="col-sm-6 m-15px-tb">
             <div className="feature-box-01 media">
-              <i className="icon theme-bg icon-desktop" />
+              {/* <i className="icon theme-bg icon-desktop" /> */}
               <div className="feature-content media-body">
                 <h5>Sécurité</h5>
                 <p>
@@ -73,7 +67,7 @@ const Expertise = () => {
           </div>
           <div className="col-sm-6 m-15px-tb">
             <div className="feature-box-01 media">
-              <i className="icon theme-bg icon-target" />
+              {/* <i className="icon theme-bg icon-target" /> */}
               <div className="feature-content media-body">
                 <h5>Tests et débogage</h5>
                 <p>
@@ -84,7 +78,7 @@ const Expertise = () => {
           </div>
           <div className="col-sm-6 m-15px-tb">
             <div className="feature-box-01 media">
-              <i className="icon theme-bg icon-target" />
+              {/* <i className="icon theme-bg icon-target" /> */}
               <div className="feature-content media-body">
                 <h5>Performances et optimisation</h5>
                 <p>
@@ -95,7 +89,7 @@ const Expertise = () => {
           </div>
           <div className="col-sm-6 m-15px-tb">
             <div className="feature-box-01 media">
-              <i className="icon theme-bg icon-target" />
+              {/* <i className="icon theme-bg icon-target" /> */}
               <div className="feature-content media-body">
                 <h5>Pratiques de développement agile</h5>
                 <p>
