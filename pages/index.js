@@ -27,7 +27,7 @@ const Index = () => {
                     Je suis un Développeur Full Stack passionné par la technologie et l'innovation, avec une solide expérience dans les domaines du design et du développement web.
                   </p>
                   <div className="btn-bar">
-                    <a className="px-btn px-btn-theme" href="static/pdf/curriculum-developpeur-front-end.pdf" target="_blank">
+                    <a className="px-btn px-btn-theme" href="static/pdf/curriculum-developpeur-full-stack.pdf" target="_blank">
                       Télécharger CV
                     </a>
                   </div>
