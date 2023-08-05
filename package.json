@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next build && next export -o docs/",
+    "deploy": "npm run export && git add . && git commit -m 'build trigger' && git push",
     "start": "next start",
     "sass": "node-sass --watch public/static/scss/style.scss public/assets/css/style.css --source-map public/static/css/style.css.map",
     "lint": "next lint"
