@@ -24,10 +24,10 @@ const About = () => {
               </div>
               <div className="about-text">
                 <h3>
-                  {`Je suis`} un développeur JavaScript full stack passionné par la création de solutions technologiques innovantes.{" "}
+                  {`Je suis`} un développeur Full Stack passionné par la création de solutions technologiques innovantes.{" "}
                 </h3>
                 <p>
-                  Ces dernières années, j'ai renforcé mes compétences en développement web, notamment dans les frameworks Angular, React et Node.JS. Mon parcours a débuté dans la création publicitaire, mais mon intérêt pour le développement Front-End m'a amené à travailler sur des projets stimulants chez Mirante Tecnologia avec l'équipe de développement du client INCRA.GOV(Gouvernement brésilien).
+                  Ces dernières années, j'ai renforcé mes compétences en développement web, notamment dans les frameworks Angular, React/Next.js, Node.JS et Spring Boot. Mon parcours a débuté dans la création publicitaire, mais mon intérêt pour le développement Front-End m'a amené à travailler sur des projets stimulants chez Mirante Tecnologia avec l'équipe de développement du client INCRA.GOV(Gouvernement brésilien).
                 </p>
                 <p>
                   En dehors du développement, j'aime enseigner le design et le développement web. Mon objectif est de continuer à apprendre et à évoluer dans le domaine de la technologie, en recherchant constamment de nouveaux défis et opportunités. Si vous cherchez un professionnel dévoué, passionné et polyvalent, je suis ouvert à de nouvelles connexions et opportunités de collaboration. Mettons-nous en contact et explorons ensemble de nouvelles possibilités!
@@ -97,7 +97,7 @@ const About = () => {
                 </div>
                 {/* /skill */}
                 <div className="skill-lt">
-                  <h6>React.js</h6>
+                  <h6>React/Next.js</h6>
                   <div className="skill-bar">
                     <div className="skill-bar-in" style={{ width: "75%" }}>
                       <span data-toggle="tooltip" title="75%" />
@@ -115,15 +115,6 @@ const About = () => {
                 </div>
                 {/* /skill */}
                 <div className="skill-lt">
-                  <h6>Bootstrap</h6>
-                  <div className="skill-bar">
-                    <div className="skill-bar-in" style={{ width: "80%" }}>
-                      <span data-toggle="tooltip" title="80%" />
-                    </div>
-                  </div>
-                </div>
-                {/* /skill */}
-                <div className="skill-lt">
                   <h6>Sass/SCSS</h6>
                   <div className="skill-bar">
                     <div className="skill-bar-in" style={{ width: "80%" }}>
@@ -133,10 +124,19 @@ const About = () => {
                 </div>
                 {/* /skill */}
                 <div className="skill-lt">
-                  <h6>Less</h6>
+                  <h6>Java</h6>
                   <div className="skill-bar">
-                    <div className="skill-bar-in" style={{ width: "60%" }}>
-                      <span data-toggle="tooltip" title="60%" />
+                    <div className="skill-bar-in" style={{ width: "85%" }}>
+                      <span data-toggle="tooltip" title="85%" />
+                    </div>
+                  </div>
+                </div>
+                {/* /skill */}
+                <div className="skill-lt">
+                  <h6>Spring Boot</h6>
+                  <div className="skill-bar">
+                    <div className="skill-bar-in" style={{ width: "75%" }}>
+                      <span data-toggle="tooltip" title="75%" />
                     </div>
                   </div>
                 </div>

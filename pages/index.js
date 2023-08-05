@@ -1,4 +1,3 @@
-import dynamic from "next/dynamic";
 import About from "../src/components/About";
 import Contact from "../src/components/Contact";
 import Expertise from "../src/components/Expertise";
@@ -25,7 +24,7 @@ const Index = () => {
                     Je suis un <TypingAnimation /> passionné!
                   </p>
                   <p className="desc">
-                    Je suis un analyste développeur Front-End passionné par la technologie et l'innovation, avec une solide expérience dans les domaines du design et du développement web.
+                    Je suis un Développeur Full Stack passionné par la technologie et l'innovation, avec une solide expérience dans les domaines du design et du développement web.
                   </p>
                   <div className="btn-bar">
                     <a className="px-btn px-btn-theme" href="static/pdf/curriculum-developpeur-front-end.pdf" target="_blank">
