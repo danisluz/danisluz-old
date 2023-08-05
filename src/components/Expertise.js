@@ -91,9 +91,9 @@ const Expertise = () => {
             <div className="feature-box-01 media">
               {/* <i className="icon theme-bg icon-target" /> */}
               <div className="feature-content media-body">
-                <h5>Pratiques de développement agile</h5>
+                <h5>Développement Back-End</h5>
                 <p>
-                  Je suis familier avec les méthodologies de développement agiles telles que Scrum ou Kanban, et je peux collaborer efficacement avec des équipes multidisciplinaires.
+                  Expérience en développement Back-End avec Java et Spring Boot. Connaissance de la gestion des requêtes, des connexions avec les bases de données et des fonctionnalités avancées telles que la sécurité et la gestion des sessions.
                 </p>
               </div>
             </div>
