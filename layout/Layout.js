@@ -13,7 +13,7 @@ const Layout = ({ children, blog }) => {
       {/* <Header blog={blog} /> */}
       {/* Main Start */}
       <main className="main-left pp-main-section">{children}</main>
-      <DayNightMood />
+      {/* <DayNightMood /> */}
       {blog && <BackBtn />}
     </Fragment>
   );

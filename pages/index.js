@@ -11,6 +11,11 @@ import TypingAnimation from "../components/TypingAnimation";
 import Layout from "../layout/Layout";
 import Experience from '../components/Experience';
 
+import DayNightMood from "../layout/DayNightMood";
+import Header from "../layout/Header";
+
+
+
 
 export default function Home({ dir }) {
 
@@ -73,6 +78,8 @@ export default function Home({ dir }) {
           rel="stylesheet"
         />
       </Head>
+      <DayNightMood />
+      {/* <Header /> */}
       <header>
         <div className={styles.translation}>
           {[...locales].sort().map((locale) => (

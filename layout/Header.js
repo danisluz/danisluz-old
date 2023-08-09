@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { Fragment, useEffect, useState } from "react";
 import { activeSection } from "../utilits";
-const Header = ({ blog }) => {
+const Header = () => {
   const [sideBarToggle, setSideBarToggle] = useState(false);
-  useEffect(() => {
-    if (!blog) {
-      activeSection();
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (!blog) {
+  //     activeSection();
+  //   }
+  // }, []);
   return (
     <Fragment>
       <div className="mob-header">
@@ -28,6 +28,7 @@ const Header = ({ blog }) => {
         </div>
       </div>
       {/* End Header */}
+      
       {/* nav bar */}
       <header
         className={`header-left ${
@@ -43,7 +44,7 @@ const Header = ({ blog }) => {
               <h5>Daniel Luz</h5>
             </div>
           </div>
-          {blog ? <MenuWithBlog /> : <MenuWithOutBlog />}
+          {/* {blog ? <MenuWithBlog /> : <MenuWithOutBlog />} */}
         </div>
         <div className="nav justify-content-center social-icons">
           <a href="https://www.facebook.com/danielsluz" target="_blank">
