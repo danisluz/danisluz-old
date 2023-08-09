@@ -11,12 +11,6 @@ import TypingAnimation from "../components/TypingAnimation";
 import Layout from "../layout/Layout";
 import Experience from '../components/Experience';
 
-import DayNightMood from "../layout/DayNightMood";
-import Header from "../layout/Header";
-
-
-
-
 export default function Home({ dir }) {
 
   const { locales } = useRouter();
@@ -28,7 +22,7 @@ export default function Home({ dir }) {
   return (
     <>
       <Head>
-        <title>{ title }</title>
+        <title>{title}</title>
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -37,8 +31,6 @@ export default function Home({ dir }) {
         <link rel="icon" href="/favicon.ico" hrefLang="en" />
         <link rel="icon" href="/favicon.ico" hrefLang="pt" />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-
-
 
         {/* <!-- plugin CSS --> */}
         <link
@@ -67,7 +59,7 @@ export default function Home({ dir }) {
           href="static/plugin/scroll/jquery.mCustomScrollbar.min.css"
         />
         {/* <!-- theme css --> */}
-        <link href="static/css/style.css" rel="stylesheet" />
+        <link href="./static/css/style.css" rel="stylesheet" />
 
         <link
           href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -78,8 +70,6 @@ export default function Home({ dir }) {
           rel="stylesheet"
         />
       </Head>
-      <DayNightMood />
-      {/* <Header /> */}
       <header>
         <div className={styles.translation}>
           {[...locales].sort().map((locale) => (
@@ -91,57 +81,75 @@ export default function Home({ dir }) {
       </header>
 
       <Layout>
-      <section
-        id="home"
-        data-nav-tooltip="Home"
-        className="pp-section pp-scrollable"
-      >
-        <div className="home-banner">
-          <div className="container">
-            <div className="row full-screen align-items-center">
-              <div className="col-lg-6">
-                <div className="type-box">
-                  <h6>Bonjour je suis</h6>
-                  <h1 className="font-alt">Daniel Luz</h1>
-                  <p className="lead">
-                    Je suis un <TypingAnimation /> passionné!
-                  </p>
-                  <p className="desc">
-                    Je suis un Développeur Full Stack passionné par la technologie et l'innovation, avec une solide expérience dans les domaines du design et du développement web.
-                  </p>
-                  <div className="btn-bar">
-                    <a className="px-btn px-btn-theme" href="static/pdf/curriculum-developpeur-full-stack.pdf" target="_blank">
-                      Télécharger CV
-                    </a>
+        <section
+          id="home"
+          data-nav-tooltip="Home"
+          className="pp-section pp-scrollable"
+        >
+          <div className="home-banner">
+            <div className="container">
+              <div className="row full-screen align-items-center">
+                <div className="col-lg-6">
+                  <div className="type-box">
+                    <h1>
+                      <FormattedMessage id="page.home.title" values={{ b: (info) => <b>{info}</b> }}/>
+                    </h1>
+                    <p className={styles.description}>
+                      <FormattedMessage id="page.home.description" values={{ b: (info) => <b>{info}</b> }}/>
+                    </p>
+
+                    <h6>Bonjour je suis</h6>
+                    <h1 className="font-alt">Daniel Luz</h1>
+                    <p className="lead">
+                      Je suis un <TypingAnimation /> passionné!
+                    </p>
+                    <p className="desc">
+                      Je suis un Développeur Full Stack passionné par la
+                      technologie et l'innovation, avec une solide expérience
+                      dans les domaines du design et du développement web.
+                    </p>
+                    <div className="btn-bar">
+                      <a
+                        className="px-btn px-btn-theme"
+                        href="static/pdf/curriculum-developpeur-full-stack.pdf"
+                        target="_blank"
+                      >
+                        Télécharger CV
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="hb-img">
-                  <img src="static/img/banner-daniel.png" title="" alt="" />
+                <div className="col-lg-6">
+                  <div className="hb-img">
+                    <img src="static/img/banner-daniel.png" title="" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      {/* End Home */}
+        </section>
+        {/* End Home */}
 
-      <About />
-      <Experience />
-      <Expertise />
-      <Contact />
+        <About />
+        <Experience />
+        <Expertise />
+        <Contact />
       </Layout>
-
 
       <main dir={dir} className={styles.main}>
         <h1>
-          <FormattedMessage id="page.home.title" values={{ b: (info) => <b>{info}</b>}}/>
+          <FormattedMessage
+            id="page.home.title"
+            values={{ b: (info) => <b>{info}</b> }}
+          />
         </h1>
         <p className={styles.description}>
-          <FormattedMessage id="page.home.description" values={{ b: (info) => <b>{info}</b>}}/>
+          <FormattedMessage
+            id="page.home.description"
+            values={{ b: (info) => <b>{info}</b> }}
+          />
         </p>
       </main>
     </>
-  )
+  );
 }
