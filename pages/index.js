@@ -4,6 +4,14 @@ import { useRouter } from 'next/router'
 import { FormattedMessage, useIntl } from 'react-intl'
 import Link from "next/link"
 
+import About from "../components/About";
+import Contact from "../components/Contact";
+import Expertise from "../components/Expertise";
+import TypingAnimation from "../components/TypingAnimation";
+import Layout from "../layout/Layout";
+import Experience from '../components/Experience';
+
+
 export default function Home({ dir }) {
 
   const { locales } = useRouter();
@@ -24,31 +32,34 @@ export default function Home({ dir }) {
         <link rel="icon" href="/favicon.ico" hrefLang="en" />
         <link rel="icon" href="/favicon.ico" hrefLang="pt" />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
+
+
         {/* <!-- plugin CSS --> */}
         <link
-          href="static/plugin/bootstrap/css/bootstrap.min.css"
           rel="stylesheet"
+          href="static/plugin/bootstrap/css/bootstrap.min.css"
         />
         <link
-          href="static/plugin/font-awesome/css/all.min.css"
           rel="stylesheet"
+          href="static/plugin/font-awesome/css/all.min.css"
         />
         <link href="static/plugin/et-line/style.css" rel="stylesheet" />
         <link
+          rel="stylesheet"
           href="static/plugin/themify-icons/themify-icons.css"
-          rel="stylesheet"
         />
         <link
+          rel="stylesheet"
           href="static/plugin/owl-carousel/css/owl.carousel.min.css"
-          rel="stylesheet"
         />
         <link
+          rel="stylesheet"
           href="static/plugin/magnific/magnific-popup.css"
-          rel="stylesheet"
         />
         <link
-          href="static/plugin/scroll/jquery.mCustomScrollbar.min.css"
           rel="stylesheet"
+          href="static/plugin/scroll/jquery.mCustomScrollbar.min.css"
         />
         {/* <!-- theme css --> */}
         <link href="static/css/style.css" rel="stylesheet" />
@@ -71,6 +82,51 @@ export default function Home({ dir }) {
           ))}
         </div>
       </header>
+
+      <Layout>
+      <section
+        id="home"
+        data-nav-tooltip="Home"
+        className="pp-section pp-scrollable"
+      >
+        <div className="home-banner">
+          <div className="container">
+            <div className="row full-screen align-items-center">
+              <div className="col-lg-6">
+                <div className="type-box">
+                  <h6>Bonjour je suis</h6>
+                  <h1 className="font-alt">Daniel Luz</h1>
+                  <p className="lead">
+                    Je suis un <TypingAnimation /> passionné!
+                  </p>
+                  <p className="desc">
+                    Je suis un Développeur Full Stack passionné par la technologie et l'innovation, avec une solide expérience dans les domaines du design et du développement web.
+                  </p>
+                  <div className="btn-bar">
+                    <a className="px-btn px-btn-theme" href="static/pdf/curriculum-developpeur-full-stack.pdf" target="_blank">
+                      Télécharger CV
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="hb-img">
+                  <img src="static/img/banner-daniel.png" title="" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* End Home */}
+
+      <About />
+      <Experience />
+      <Expertise />
+      <Contact />
+      </Layout>
+
+
       <main dir={dir} className={styles.main}>
         <h1>
           <FormattedMessage id="page.home.title" values={{ b: (info) => <b>{info}</b>}}/>
