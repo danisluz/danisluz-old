@@ -1,7 +1,7 @@
 import '@/styles/globals.css'
 import { useRouter } from 'next/router'
 import { IntlProvider } from 'react-intl'
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 
 import PreLoader from "../layout/PreLoader";
 
