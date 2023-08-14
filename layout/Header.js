@@ -13,9 +13,6 @@ const Header = ({ blog }) => {
       <div className="mob-header">
         <div className="d-flex">
           <div className="navbar-brand">
-            {/* <Link href="/">
-              <a className="logo-text">Daniel Luz</a>
-            </Link> */}
           </div>
           <button
             className={`toggler-menu ${sideBarToggle ? "open" : ""}`}

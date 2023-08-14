@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import styles from '@/styles/Home.module.css'
+import { useState } from "react";
+import styles from '../styles/Home.module.css'
 import { useRouter } from 'next/router'
 import { FormattedMessage, useIntl } from 'react-intl'
 import Link from "next/link"
@@ -15,9 +16,10 @@ export default function Home({ dir }) {
 
   const { locales } = useRouter();
   const intl = useIntl();
-
   const title = intl.formatMessage({ id: "page.home.head.title"})
   const description = intl.formatMessage({ id: "page.home.head.meta.description"})
+  const [selectedLocale, setSelectedLocale] = useState("fr");
+
 
   return (
     <>
@@ -72,9 +74,14 @@ export default function Home({ dir }) {
       </Head>
       <header>
         <div className={styles.translation}>
-          {[...locales].sort().map((locale) => (
+          {locales.map((locale) => (
             <Link key={locale} href="/" locale={locale}>
-              <div>{locale}</div>
+              <div 
+                className={`${styles.languageButton} ${selectedLocale === locale ? styles.selectedLanguage : ""}`}
+                onClick={() => setSelectedLocale(locale)}
+              >
+                <span>{locale.toUpperCase()}</span>
+              </div>
             </Link>
           ))}
         </div>
