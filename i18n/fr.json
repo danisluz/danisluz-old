@@ -1,6 +1,6 @@
 {
-  "page.home.head.title": "Exemple Next.js i18n",
-  "page.home.head.meta.description": "Next.js i18n exemple - Français",
+  "page.home.head.title": "Daniel Luz",
+  "page.home.head.meta.description": "Découvrez Daniel Luz, Développeur Full Stack passionné par l'innovation technologique. Compétences en Angular, React, Node.js, et Spring Boot. Expert en HTML, CSS, JavaScript et intégration d'APIs.",
   "page.home.title": "Bienvenue sur <b>la page d'accueil</b>",
   "page.home.description": "Vous consultez actuellement la page d'accueil en français"
 }

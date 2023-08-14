@@ -11,8 +11,10 @@
   display: flex;
   gap: 10px;
   padding: 15px;
+  justify-content: flex-end;
   @media (max-width: 1200px) {
     left: 0;
+    justify-content: flex-start;
   };
 }
 
