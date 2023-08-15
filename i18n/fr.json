@@ -27,5 +27,65 @@
   "header.about": "Sur moi",
   "header.experiences": "Expériences",
   "header.expertises": "Expertises",
-  "header.contact": "Contactez moi"
+  "header.contact": "Contactez moi",
+
+  "page.experiencies.title": "Expériences",
+  "page.experiencies.experience1.title": "Développeur Front End",
+  "page.experiencies.experience1.name": "Mirante Tecnologia S/A | Juin 2022 - Actuel",
+  "page.experiencies.experience1.type": "À temps plein",
+  "page.experiencies.experience1.description": "Je travaille dans les équipes de développement et de maintenance front-end des clients Barcorbrás et INCRA.GOV. Utilisation du framework Angular 8+, des gardes, des services, du modèle, de l'interface, des routes, des modules, du pipe, de l'intercepteur et du client http, Clean Code, Git, Code Review, Git Flow versioning et la méthodologie agile Scrum.",
+
+  "page.experiencies.experience2.title": "Développeur Full Steck",
+  "page.experiencies.experience2.name": "Barake Digital | 2015 - 2022",
+  "page.experiencies.experience2.type": "À temps plein",
+  "page.experiencies.experience2.description": "J'ai travaillé sur le développement Front End en utilisant Angular 12, Sass, Bootstrap, Typescript et la programmation réactive avec RXJS. Toujours à la recherche de réactivité et de rapidité en utilisant les meilleures pratiques pour fournir des logiciels avec une évolutivité élevée et une maintenance facile.",
+
+  "page.experiencies.experience3.title": "Professeur Technique",
+  "page.experiencies.experience3.name": "SENAC Porto Alegre | 2009 - 2014",
+  "page.experiencies.experience3.type": "À temps plein",
+  "page.experiencies.experience3.description": "Professeur de cours dans le domaine du design dans les disciplines du développement Web et du design graphique. J'ai participé en tant que mentor pour les étudiants qui sont entrés dans les carrières de conception et de développement Web, en dirigeant leur apprentissage et leurs tendances. J'ai travaillé comme évaluateur dans plusieurs présentations de tableaux de travail de conclusion de cours au SENAC/RS.",
+
+  "page.experiencies.experience4.title": "Responsable Technique",
+  "page.experiencies.experience4.name": "Liberdade Industrie Graphique | 2004 - 2009",
+  "page.experiencies.experience4.type": "À temps plein",
+  "page.experiencies.experience4.description": "En tant que chef d'équipe axé sur l'amélioration de l'expérience client avec un service personnalisé et l'application d'un design de qualité. Au service des principales entreprises de la région, développement de supports graphiques et de marketing digital. Nous avons mis en place un nouveau processus d'impression offset et un nouveau flux de travail pour le service client.",
+
+  "page.experiencies.experience5.title": "Assistante de Création",
+  "page.experiencies.experience5.name": "Atuação Agence de Publicité | 1998 - 2004",
+  "page.experiencies.experience5.type": "Stagiaire",
+  "page.experiencies.experience5.description": "En tant qu'assistante créative, développe la conception de campagnes pour plusieurs entreprises telles que: STB Trip & Travel, Vinícola Santa Colina, Bread`s Panificadora, Liberty Seguros, Durt Dog Eyewear et Grupo RBS.",
+
+  "page.expertises.title": "Que fais-je?",
+  "page.expertises1.title": "HTML/CSS",
+  "page.expertises1.description": "Je suis capable d'écrire du code HTML sémantique et bien organisé ainsi que du CSS pour créer des mises en page attrayantes et réactives.",
+  "page.expertises2.title": "JavaScript",
+  "page.expertises2.description": "Je possède une solide connaissance de JavaScript et de ses bibliothèques/frameworks tels que Angular ou React, pour créer des interactions dynamiques et améliorer l'expérience utilisateur.",
+  "page.expertises3.title": "Frameworks front-end",
+  "page.expertises3.description": "J'ai de l'expérience avec des frameworks et bibliothèques tels que Bootstrap, Material-UI, Semantic UI, etc. qui permettent d'accélérer le développement.",
+  "page.expertises4.title": "APIs et intégrations",
+  "page.expertises4.description": "Je suis capable de travailler avec des APIs RESTful et GraphQL pour intégrer des services externes et obtenir des données de manière efficace.",
+  "page.expertises5.title": "Sécurité",
+  "page.expertises5.description": "Je suis soucieux de la sécurité de l'application et j'implémente des bonnes pratiques ainsi que des validations pour éviter les vulnérabilités.",
+  "page.expertises6.title": "Tests et débogage",
+  "page.expertises6.description": "J'ai de l'expérience avec les tests unitaires et d'intégration, ainsi que des compétences en débogage pour identifier et résoudre les problèmes dans l'applicatio",
+  "page.expertises7.title": "Performances et optimisation",
+  "page.expertises7.description": "Je cherche toujours à optimiser les performances de l'application pour la rendre rapide et réactive pour les utilisateurs.",
+  "page.expertises8.title": "Développement Back-End",
+  "page.expertises8.description": "Expérience en développement Back-End avec Java et Spring Boot. Connaissance de la gestion des requêtes, des connexions avec les bases de données et des fonctionnalités avancées telles que la sécurité et la gestion des sessions.",
+
+  "page.contact.title": "Contact",
+  "page.contact.caption": "Quelle est ton histoire? Entrer en contact",
+  "page.contact.text": "N'hésitez pas à me contacter",
+  "page.contact.titleForm": "Dire quelque chose",
+  "page.contact.button": "Envoyer le message",
+  "page.contact.successMessage": "Message envoyé avec succès",
+  "page.contact.errorMessage": "Échec de l'envoi du message",
+  "page.contact.placeholder.nome": "Nom",
+  "page.contact.placeholder.email": "E-mail",
+  "page.contact.placeholder.subject": "Object",
+  "page.contact.placeholder.message": "Votre message...",
+
+  
+
+  "fim": ""
 }

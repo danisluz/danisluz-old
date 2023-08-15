@@ -1,6 +1,19 @@
 import emailjs from "emailjs-com";
 import { useState } from "react";
+
+import { FormattedMessage, useIntl } from 'react-intl';
+import { useRouter } from 'next/router'
+
+
 const Contact = () => {
+
+  const intl = useIntl();
+  const btnSend = intl.formatMessage({ id: "page.contact.button"})
+  const placeholderName = intl.formatMessage({ id: "page.contact.placeholder.nome"})
+  const placeholderEmail = intl.formatMessage({ id: "page.contact.placeholder.email"})
+  const placeholderSubject = intl.formatMessage({ id: "page.contact.placeholder.subject"})
+  const placeholderMessage = intl.formatMessage({ id: "page.contact.placeholder.message"})
+
   const [mailData, setMailData] = useState({
     name: "",
     email: "",
@@ -54,14 +67,18 @@ const Contact = () => {
     >
       <div className="container">
         <div className="title">
-          <h3>Entrer en contact.</h3>
+          <h3>
+            <FormattedMessage id="page.contact.title" /> .
+          </h3>
         </div>
         <div className="row">
           <div className="col-lg-5 col-xl-4 m-15px-tb">
             <div className="contact-info">
-              <h4>Quelle est ton histoire? Entrer en contact</h4>
+              <h4>
+                <FormattedMessage id="page.contact.caption" />
+              </h4>
               <p>
-                N'hésitez pas à me contacter.
+                <FormattedMessage id="page.contact.text" />
               </p>
               <ul>
                 <li className="media">
@@ -83,7 +100,9 @@ const Contact = () => {
           </div>
           <div className="col-lg-7 col-xl-8 m-15px-tb">
             <div className="contact-form">
-              <h4>Dire quelque chose</h4>
+              <h4>
+                <FormattedMessage id="page.contact.titleForm" />
+              </h4>
               <form id="contact-form" onSubmit={(e) => onSubmit(e)}>
                 <div className="row">
                   <div className="col-md-6">
@@ -93,7 +112,7 @@ const Contact = () => {
                         onChange={(e) => onChange(e)}
                         value={name}
                         id="name"
-                        placeholder="Non *"
+                        placeholder={placeholderName}
                         className={`form-control ${
                           error ? (!name ? "invalid" : "") : ""
                         }`}
@@ -108,7 +127,7 @@ const Contact = () => {
                         onChange={(e) => onChange(e)}
                         value={email}
                         id="email"
-                        placeholder="Email *"
+                        placeholder={placeholderEmail}
                         className={`form-control ${
                           error ? (!email ? "invalid" : "") : ""
                         }`}
@@ -123,7 +142,7 @@ const Contact = () => {
                         onChange={(e) => onChange(e)}
                         value={subject}
                         id="subject"
-                        placeholder="Suject *"
+                        placeholder={placeholderSubject}
                         className={`form-control ${
                           error ? (!subject ? "invalid" : "") : ""
                         }`}
@@ -138,7 +157,7 @@ const Contact = () => {
                         onChange={(e) => onChange(e)}
                         value={message}
                         id="message"
-                        placeholder="Votre message *"
+                        placeholder={placeholderMessage}
                         rows={5}
                         className={`form-control ${
                           error ? (!message ? "invalid" : "") : ""
@@ -160,7 +179,7 @@ const Contact = () => {
                       <input
                         className="px-btn px-btn-theme"
                         type="submit"
-                        value="envoyer le message"
+                        value={btnSend}
                       />
                     </div>
                     <span
@@ -171,14 +190,14 @@ const Contact = () => {
                           error !== null ? (!error ? "block" : "none") : "none",
                       }}
                     >
-                      Message envoyé avec succès
+                      <FormattedMessage id="page.contact.successMessage" />
                     </span>
                     <span
                       id="err_message"
                       className="text-danger"
                       style={{ display: "none" }}
                     >
-                      Échec de l'envoi du message
+                      <FormattedMessage id="page.contact.errorMessage" />
                     </span>
                   </div>
                 </div>

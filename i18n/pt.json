@@ -1,6 +1,6 @@
 {
   "page.home.head.title": "Daniel Luz",
-  "page.home.head.meta.description": "Discover Daniel Luz, Full Stack Developer passionate about technological innovation. Skills in Angular, React, Node.js, and Spring Boot. Expert in HTML, CSS, JavaScript and API integration.",
+  "page.home.head.meta.description": "Conheça Daniel Luz, Desenvolvedor Full Stack apaixonado por inovação tecnológica. Habilidades em Angular, React, Node.js e Spring Boot. Especialista em integração de HTML, CSS, JavaScript e API.",
   "page.home.title": "Olá eu sou",
   "page.home.sutitle": "Eu sou um",
   "page.home.office": "Desenvolvedor",
@@ -26,5 +26,63 @@
   "header.about": "Sobre mim",
   "header.experiences": "Experiência",
   "header.expertises": "Especialidades",
-  "header.contact": "Fale comigo"
+  "header.contact": "Fale comigo",
+
+  "page.experiencies.title": "Experiências",
+  "page.experiencies.experience1.title": "Desenvolvedor Front End",
+  "page.experiencies.experience1.name": "Mirante Tecnologia S/A | Junho 2022 - Atualidade",
+  "page.experiencies.experience1.type": "Tempo Integral",
+  "page.experiencies.experience1.description": "Atuo nas equipes de desenvolvimento e manutenção front-end dos clientes Barcorbrás e INCRA.GOV. Utilizando framework Angular 8+, guardas, serviços, modelo, interface, rotas, módulos, pipe, interceptor e cliente http, Clean Code, Git, Code Review, versionamento Git Flow e a metodologia ágil Scrum.",
+
+  "page.experiencies.experience2.title": "Desenvolvedor Full Stack",
+  "page.experiencies.experience2.name": "Barake Digital | 2015 - 2022",
+  "page.experiencies.experience2.type": "Tempo Integral",
+  "page.experiencies.experience2.description": "Atuei no desenvolvimento Front End utilizando Angular 12, Sass, Bootstrap, Typescript e programação reativa com RXJS. Sempre buscando agilidade e velocidade utilizando as melhores práticas para entregar software com alta escalabilidade e fácil manutenção.",
+
+  "page.experiencies.experience3.title": "Professor Técnico",
+  "page.experiencies.experience3.name": "SENAC Porto Alegre | 2009 - 2014",
+  "page.experiencies.experience3.type": "Tempo Integral",
+  "page.experiencies.experience3.description": "Professor de cursos na área de design nas disciplinas de desenvolvimento web e design gráfico. Participei como mentor de alunos que ingressaram nas carreiras de web design e desenvolvimento, direcionando seu aprendizado e tendências. Atuei como avaliador em diversas apresentações de mesas de trabalho de conclusão de curso no SENAC/RS.",
+
+  "page.experiencies.experience4.title": "Responsável Técnico",
+  "page.experiencies.experience4.name": "Liberdade Indústria Gráfica | 2004 - 2009",
+  "page.experiencies.experience4.type": "Tempo Integral",
+  "page.experiencies.experience4.description": "Como líder de equipe focada em melhorar a experiência do cliente com atendimento personalizado e aplicação de design de qualidade. Ao serviço das principais empresas da região, desenvolvimento de suportes gráficos e marketing digital. Implementamos um novo processo de impressão offset e um novo fluxo de trabalho de atendimento ao cliente.",
+
+  "page.experiencies.experience5.title": "Assistante de Criação",
+  "page.experiencies.experience5.name": "Atuação Agência de Publicidade | 1998 - 2004",
+  "page.experiencies.experience5.type": "Estagiário",
+  "page.experiencies.experience5.description": "Como assistente de criação, desenvolve o design de campanhas para diversas empresas como: STB Trip & Travel, Vinícola Santa Colina, Bread`s Panificadora, Liberty Seguros, Durt Dog Eyewear e Grupo RBS.",
+  
+  "page.expertises.title": "O que eu faço?",
+  "page.expertises1.title": "HTML/CSS",
+  "page.expertises1.description": "Sou capaz de escrever HTML e CSS semânticos e bem organizados para criar layouts atraentes e responsivos.",
+  "page.expertises2.title": "JavaScript",
+  "page.expertises2.description": "Tenho um conhecimento sólido de JavaScript e suas bibliotecas/frameworks como Angular ou React, para criar interações dinâmicas e melhorar a experiência do usuário.",
+  "page.expertises3.title": "Frameworks front-end",
+  "page.expertises3.description": "Tenho experiência com frameworks e bibliotecas como Bootstrap, Material-UI, Semantic UI, etc. que aceleram o desenvolvimento.",
+  "page.expertises4.title": "APIs e Integrações",
+  "page.expertises4.description": "Sou capaz de trabalhar com APIs RESTful e GraphQL para integrar serviços externos e obter dados de forma eficiente.",
+  "page.expertises5.title": "Segurança",
+  "page.expertises5.description": "Preocupo-me com a segurança da aplicação e implemento boas práticas bem como validações para evitar vulnerabilidades.",
+  "page.expertises6.title": "Testes Unitários",
+  "page.expertises6.description": "Tenho experiência com testes de unidade e integração, bem como habilidades de depuração para identificar e resolver problemas no aplicativo.",
+  "page.expertises7.title": "Desempenho e Otimização",
+  "page.expertises7.description": "Estou sempre procurando otimizar o desempenho do aplicativo para torná-lo rápido e responsivo para os usuários.",
+  "page.expertises8.title": "Desenvolvimento Back-End",
+  "page.expertises8.description": "Experiência em desenvolvimento Back-End com Java e Spring Boot. Conhecimento de gerenciamento de consultas, conexões de banco de dados e recursos avançados, como segurança e gerenciamento de sessões.",
+
+  "page.contact.title": "Contato",
+  "page.contact.caption": "Qual a sua história? Entre em contato",
+  "page.contact.text": "Não hesite em contactar-me",
+  "page.contact.titleForm": "Diga algo",
+  "page.contact.button": "Enviar mensagem",
+  "page.contact.successMessage": "Mensagem enviada com sucesso",
+  "page.contact.errorMessage": "Falha no envio da mensagem",
+  "page.contact.placeholder.nome": "Nome",
+  "page.contact.placeholder.email": "E-mail",
+  "page.contact.placeholder.subject": "Assunto",
+  "page.contact.placeholder.message": "Sua mensagem...",
+
+  "fim": ""
 }

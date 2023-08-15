@@ -26,6 +26,65 @@
   "header.about": "About me",
   "header.experiences": "Experiences",
   "header.expertises": "Expertises",
-  "header.contact": "Contact me"
+  "header.contact": "Contact me",
+
+  "page.experiencies.title": "Experiences",
+  "page.experiencies.experience1.title": "Developer Front End",
+  "page.experiencies.experience1.name": "Mirante Tecnologia S/A | Juin 2022 - Actuel",
+  "page.experiencies.experience1.type": "Full time",
+  "page.experiencies.experience1.description": "I work in the front-end development and maintenance teams of Barcorbrás and INCRA.GOV clients. Using Angular 8+ framework, guards, services, model, interface, routes, modules, pipe, interceptor and http client, Clean Code, Git, Code Review, Git Flow versioning and the agile Scrum methodology.",
+
+  "page.experiencies.experience2.title": "Developer Full Steck",
+  "page.experiencies.experience2.name": "Barake Digital | 2015 - 2022",
+  "page.experiencies.experience2.type": "Full time",
+  "page.experiencies.experience2.description": "I worked on Front End development using Angular 12, Sass, Bootstrap, Typescript and reactive programming with RXJS. Always looking for responsiveness and speed using best practices to deliver software with high scalability and easy maintenance.",
+
+  "page.experiencies.experience3.title": "Technical Teacher",
+  "page.experiencies.experience3.name": "SENAC Porto Alegre | 2009 - 2014",
+  "page.experiencies.experience3.type": "Full time",
+  "page.experiencies.experience3.description": "Professor of courses in the field of design in the disciplines of web development and graphic design. I participated as a mentor for students who entered web design and development careers, directing their learning and trends. I worked as an evaluator in several presentations of course conclusion work tables at SENAC/RS.",
+
+  "page.experiencies.experience4.title": "Responsable Technique",
+  "page.experiencies.experience4.name": "Liberdade Graphic Industry | 2004 - 2009",
+  "page.experiencies.experience4.type": "Full time",
+  "page.experiencies.experience4.description": "As a team leader focused on improving the customer experience with personalized service and the application of quality design. At the service of the main companies in the region, development of graphic media and digital marketing. We implemented a new offset printing process and a new customer service workflow.",
+
+  "page.experiencies.experience5.title": "Assistante de Création",
+  "page.experiencies.experience5.name": "Atuação Advertising Company | 1998 - 2004",
+  "page.experiencies.experience5.type": "Trainee",
+  "page.experiencies.experience5.description": "As a creative assistant, develops the design of campaigns for several companies such as: STB Trip & Travel, Vinícola Santa Colina, Bread`s Panificadora, Liberty Seguros, Durt Dog Eyewear and Grupo RBS.",
+
+  "page.expertises.title": "What do I do?",
+  "page.expertises1.title": "HTML/CSS",
+  "page.expertises1.description": "I am able to write semantic and well-organized HTML and CSS to create attractive and responsive layouts.",
+  "page.expertises2.title": "JavaScript",
+  "page.expertises2.description": "I have a solid knowledge of JavaScript and its libraries/frameworks such as Angular or React, to create dynamic interactions and improve the user experience.",
+  "page.expertises3.title": "Frameworks front-end",
+  "page.expertises3.description": "I have experience with frameworks and libraries such as Bootstrap, Material-UI, Semantic UI, etc. that accelerate development.",
+  "page.expertises4.title": "APIs and integrations",
+  "page.expertises4.description": "I am able to work with RESTful and GraphQL APIs to integrate external services and get data efficiently.",
+  "page.expertises5.title": "Security",
+  "page.expertises5.description": "I am concerned about the security of the application and I implement good practices as well as validations to avoid vulnerabilities.",
+  "page.expertises6.title": "Unitary Tests",
+  "page.expertises6.description": "I have experience with unit and integration testing, as well as debugging skills to identify and resolve issues in the application.",
+  "page.expertises7.title": "Performance and optimization",
+  "page.expertises7.description": "I'm always looking to optimize the performance of the app to make it fast and responsive for users.",
+  "page.expertises8.title": "Development Back-End",
+  "page.expertises8.description": "Experience in Back-End development with Java and Spring Boot. Knowledge of query management, database connections, and advanced features such as security and session management.",
+
+  "page.contact.title": "Contact",
+  "page.contact.caption": "What's your story? Get in touch",
+  "page.contact.text": "Do not hesitate to contact me",
+  "page.contact.titleForm": "To say something",
+  "page.contact.button": "Send the message",
+  "page.contact.successMessage": "Message sent successfully",
+  "page.contact.errorMessage": "Failed to send message",
+  "page.contact.placeholder.nome": "Name",
+  "page.contact.placeholder.email": "E-mail",
+  "page.contact.placeholder.subject": "Subject",
+  "page.contact.placeholder.message": "Your message...",
+
+  "fim": ""
+
   
 }
