@@ -1,6 +1,10 @@
 {
   "page.home.head.title": "Daniel Luz",
   "page.home.head.meta.description": "Découvrez Daniel Luz, Développeur Full Stack passionné par l'innovation technologique. Compétences en Angular, React, Node.js, et Spring Boot. Expert en HTML, CSS, JavaScript et intégration d'APIs.",
-  "page.home.title": "Bienvenue sur <b>la page d'accueil</b>",
-  "page.home.description": "Vous consultez actuellement la page d'accueil en français"
+  "page.home.title": "Bonjour je suis",
+  "page.home.sutitle": "Je suis un",
+  "page.home.office": "Développeur",
+  "page.home.text": "Je suis un Développeur Full Stack passionné par la technologie et l'innovation, avec une solide expérience dans les domaines du design et du développement web.",
+  "page.home.button": "Télécharger CV",
+  "page.home.description": "Franch"
 }

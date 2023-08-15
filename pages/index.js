@@ -98,22 +98,14 @@ export default function Home({ dir }) {
               <div className="row full-screen align-items-center">
                 <div className="col-lg-6">
                   <div className="type-box">
-                    <h1>
-                      <FormattedMessage id="page.home.title" values={{ b: (info) => <b>{info}</b> }}/>
-                    </h1>
-                    <p className={styles.description}>
-                      <FormattedMessage id="page.home.description" values={{ b: (info) => <b>{info}</b> }}/>
-                    </p>
 
-                    <h6>Bonjour je suis</h6>
+                    <h6><FormattedMessage id="page.home.title" values={{ b: (info) => <b>{info}</b> }}/></h6>
                     <h1 className="font-alt">Daniel Luz</h1>
                     <p className="lead">
-                      Je suis un <TypingAnimation /> passionné!
+                      <FormattedMessage id="page.home.sutitle" values={{ b: (info) => <b>{info}</b> }}/> <TypingAnimation />!
                     </p>
                     <p className="desc">
-                      Je suis un Développeur Full Stack passionné par la
-                      technologie et l'innovation, avec une solide expérience
-                      dans les domaines du design et du développement web.
+                      <FormattedMessage id="page.home.text" values={{ b: (info) => <b>{info}</b> }}/>
                     </p>
                     <div className="btn-bar">
                       <a
@@ -121,7 +113,7 @@ export default function Home({ dir }) {
                         href="static/pdf/curriculum-developpeur-full-stack.pdf"
                         target="_blank"
                       >
-                        Télécharger CV
+                        <FormattedMessage id="page.home.button" values={{ b: (info) => <b>{info}</b> }}/>
                       </a>
                     </div>
                   </div>
