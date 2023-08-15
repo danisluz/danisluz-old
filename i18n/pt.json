@@ -82,7 +82,5 @@
   "page.contact.placeholder.nome": "Nome",
   "page.contact.placeholder.email": "E-mail",
   "page.contact.placeholder.subject": "Assunto",
-  "page.contact.placeholder.message": "Sua mensagem...",
-
-  "fim": ""
+  "page.contact.placeholder.message": "Sua mensagem..."
 }
