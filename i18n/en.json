@@ -20,6 +20,12 @@
   "page.about.educationSkills.education2.title": "Web Design Technician",
   "page.about.educationSkills.education2.description": "SENAI School, RS, Brazil",
 
-  "page.about.educationSkills.skills.title": "Skills"
+  "page.about.educationSkills.skills.title": "Skills",
+
+  "header.home": "Home",
+  "header.about": "About me",
+  "header.experiences": "Experiences",
+  "header.expertises": "Expertises",
+  "header.contact": "Contact me"
   
 }

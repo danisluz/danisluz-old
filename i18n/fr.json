@@ -21,5 +21,11 @@
   "page.about.educationSkills.education2.title": "Technicien Web Design",
   "page.about.educationSkills.education2.description": "École SENAI, RS, Brésil",
 
-  "page.about.educationSkills.skills.title": "Compétences"
+  "page.about.educationSkills.skills.title": "Compétences",
+
+  "header.home": "Home",
+  "header.about": "Sur moi",
+  "header.experiences": "Expériences",
+  "header.expertises": "Expertises",
+  "header.contact": "Contactez moi"
 }

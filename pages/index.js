@@ -73,7 +73,10 @@ export default function Home({ dir }) {
         />
       </Head>
       <header>
+
+
         <div className={styles.translation}>
+
           {locales.map((locale) => (
             <Link key={locale} href="/" locale={locale}>
               <div 
@@ -84,7 +87,9 @@ export default function Home({ dir }) {
               </div>
             </Link>
           ))}
+          
         </div>
+        
       </header>
 
       <Layout>

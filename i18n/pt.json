@@ -20,5 +20,11 @@
   "page.about.educationSkills.education2.title": "Técnico em Web Design",
   "page.about.educationSkills.education2.description": "Escola SENAI, RS, Brasil",
 
-  "page.about.educationSkills.skills.title": "Habilidades"
+  "page.about.educationSkills.skills.title": "Habilidades",
+
+  "header.home": "Home",
+  "header.about": "Sobre mim",
+  "header.experiences": "Experiência",
+  "header.expertises": "Especialidades",
+  "header.contact": "Fale comigo"
 }

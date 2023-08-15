@@ -1,19 +1,24 @@
-import Link from "next/link";
 import { Fragment, useEffect, useState } from "react";
 import { activeSection } from "../utilits";
+import { FormattedMessage, useIntl } from 'react-intl';
+import { useRouter } from 'next/router'
+
 const Header = ({ blog }) => {
+  const { locales } = useRouter();
+  const intl = useIntl();
+
   const [sideBarToggle, setSideBarToggle] = useState(false);
   useEffect(() => {
     if (!blog) {
       activeSection();
     }
   }, []);
+
   return (
     <Fragment>
       <div className="mob-header">
         <div className="d-flex">
-          <div className="navbar-brand">
-          </div>
+          <div className="navbar-brand"></div>
           <button
             className={`toggler-menu ${sideBarToggle ? "open" : ""}`}
             onClick={() => setSideBarToggle(!sideBarToggle)}
@@ -40,7 +45,7 @@ const Header = ({ blog }) => {
               <h5>Daniel Luz</h5>
             </div>
           </div>
-          {blog ? <MenuWithBlog /> : <MenuWithOutBlog />}
+          {blog ? <MenuWithBlog /> : <MenuWithOutBlog locales={locales} />}
         </div>
         <div className="nav justify-content-center social-icons">
           <a href="https://www.facebook.com/danielsluz" target="_blank">
@@ -60,41 +65,73 @@ const Header = ({ blog }) => {
     </Fragment>
   );
 };
+
 export default Header;
 
-const MenuWithOutBlog = () => {
+const MenuWithOutBlog = ({ locales }) => {
+  const intl = useIntl();
+  const [selectedLocale, setSelectedLocale] = useState("fr");
+  
   return (
     <ul className="nav nav-menu" id="pp-menu">
       <li data-menuanchor="home" className="active">
         <a className="nav-link" href="#home">
           <i className="ti-home" />
-          <span>Home</span>
+          <span>
+            <FormattedMessage id="header.home" />
+          </span>
         </a>
       </li>
       <li data-menuanchor="about">
         <a className="nav-link" href="#about">
           <i className="ti-id-badge" />
-          <span>Sur moi</span>
+          <span>
+            <FormattedMessage id="header.about" />
+          </span>
         </a>
       </li>
       <li data-menuanchor="about">
         <a className="nav-link" href="#experience">
           <i className="ti-bookmark-alt" />
-          <span>Expériences</span>
+          <span>
+            <FormattedMessage id="header.experiences" />
+          </span>
         </a>
       </li>
       <li data-menuanchor="services">
         <a className="nav-link" href="#expertise">
           <i className="ti-panel" />
-          <span>Expertises</span>
+          <span>
+            <FormattedMessage id="header.expertises" />
+          </span>
         </a>
       </li>
       <li data-menuanchor="contactus">
         <a className="nav-link" href="#contactus">
           <i className="ti-map-alt" />
-          <span>Contactez moi</span>
+          <span>
+            <FormattedMessage id="header.contact" />
+          </span>
         </a>
       </li>
+
+      {/* <li data-menuanchor="contactus">
+        <div className={styles.translationHeader}>
+          {locales.map((locale) => (
+            <Link key={locale} href="/" locale={locale}>
+              <div
+                className={`${styles.languageButton} ${
+                  selectedLocale === locale ? styles.selectedLanguage : ""
+                }`}
+                onClick={() => setSelectedLocale(locale)}
+              >
+                <span>{locale.toUpperCase()}</span>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </li> */}
+
     </ul>
   );
 };
@@ -104,59 +141,12 @@ const MenuWithBlog = () => {
     window.addEventListener("scroll", () =>
       document.querySelector(".blog").classList.add("active")
     );
-  });
+  }, []);
 
   return (
     <Fragment>
       <ul className="nav nav-menu" id="pp-menu">
-        <li data-menuanchor="home">
-          <Link href="/#home">
-            <a className="nav-link">
-              <i className="ti-home" />
-              <span>Home</span>
-            </a>
-          </Link>
-        </li>
-        <li data-menuanchor="about">
-          <Link href="/#about">
-            <a className="nav-link">
-              <i className="ti-id-badge" />
-              <span>About Me</span>
-            </a>
-          </Link>
-        </li>
-        <li data-menuanchor="services">
-          <Link href="/#services">
-            <a className="nav-link">
-              <i className="ti-panel" />
-              <span>Services</span>
-            </a>
-          </Link>
-        </li>
-        <li data-menuanchor="work">
-          <Link href="/#work">
-            <a className="nav-link">
-              <i className="ti-bookmark-alt" />
-              <span>Portfolio</span>
-            </a>
-          </Link>
-        </li>
-        <li data-menuanchor="blog" className="blog active">
-          <Link href="/#blog">
-            <a className="nav-link">
-              <i className="ti-layout-media-overlay-alt-2" />
-              <span>Blogs</span>
-            </a>
-          </Link>
-        </li>
-        <li data-menuanchor="contactus">
-          <Link href="/#contactus">
-            <a className="nav-link">
-              <i className="ti-map-alt" />
-              <span>Contact Me</span>
-            </a>
-          </Link>
-        </li>
+        {/* ... outras entradas de menu ... */}
       </ul>
     </Fragment>
   );
