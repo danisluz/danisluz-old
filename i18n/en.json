@@ -1,11 +1,25 @@
 {
-  "page.home.head.title": "Next.js i18n example",
+  "page.home.head.title": "Daniel Luz",
   "page.home.head.meta.description": "Discover Daniel Luz, Full Stack Developer passionate about technological innovation. Skills in Angular, React, Node.js, and Spring Boot. Expert in HTML, CSS, JavaScript and API integration.",
   "page.home.title": "Hello I am",
   "page.home.sutitle": "I am a",
   "page.home.office": "Developer",
   "page.home.text": "I am a Full Stack Developer passionate about technology and innovation, with a solid experience in the fields of web design and development.",
   "page.home.button": "Download CV",
-  "page.home.description": "English."
+  "page.home.description": "EN.",
+
+  "page.about.aboutMe.title": "About me",
+  "page.about.aboutMe.text1": "I am a Full Stack developer passionate about creating innovative technology solutions.",
+  "page.about.aboutMe.text2": "In recent years, I have strengthened my skills in web development, especially in Angular, React/Next.js, Node.JS and Spring Boot frameworks. My journey started in advertising creation, but my interest in Front-End development led me to work on challenging projects at Mirante Tecnologia with the INCRA.GOV (Brazilian Government) client development team.",
+  "page.about.aboutMe.text3": "Outside of development, I enjoy teaching web design and development. My goal is to keep learning and growing in the field of technology, constantly looking for new challenges and opportunities. If you are looking for a dedicated, passionate and versatile professional, I am open to new connections and collaboration opportunities. Let's get in touch and explore new possibilities together!",
+
+  "page.about.educationSkills.title": "Education & Skills",
+
+  "page.about.educationSkills.education1.title": "Production Multimédia",
+  "page.about.educationSkills.education1.description": "College SENAC, RS, Brazil",
+  "page.about.educationSkills.education2.title": "Web Design Technician",
+  "page.about.educationSkills.education2.description": "SENAI School, RS, Brazil",
+
+  "page.about.educationSkills.skills.title": "Skills"
   
 }

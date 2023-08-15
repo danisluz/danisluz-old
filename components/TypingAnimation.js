@@ -7,10 +7,7 @@ const TypingAnimation = () => {
   const el = useRef(null);
   const intl = useIntl();
 
-  const handleLocaleChange = useCallback((newLocale) => {
-    // Lógica para manipular a troca de idioma, se necessário
-  }, []);
-
+  const handleLocaleChange = useCallback(() => {}, []);
   const router = useRouter();
 
   useEffect(() => {
