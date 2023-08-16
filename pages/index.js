@@ -1,9 +1,9 @@
-import Head from 'next/head'
-import { useState } from "react";
-import styles from '../styles/Home.module.css'
-import { useRouter } from 'next/router'
+import React, { useState } from 'react';
 import { FormattedMessage, useIntl } from 'react-intl'
 import Link from "next/link"
+import { useRouter } from 'next/router'
+import Head from 'next/head'
+import styles from '../styles/Home.module.css'
 
 import About from "../components/About";
 import Contact from "../components/Contact";
@@ -20,6 +20,7 @@ export default function Home({ dir }) {
   const pdfCurriculum = intl.formatMessage({ id: "page.home.pdf"})
   const description = intl.formatMessage({ id: "page.home.head.meta.description"})
   const [selectedLocale, setSelectedLocale] = useState("fr");
+  const pathSegments = useRouter().locale;
 
   return (
     <>
@@ -39,7 +40,7 @@ export default function Home({ dir }) {
           {locales.map((locale) => (
             <Link key={locale} href="/" locale={locale}>
               <div 
-                className={`${styles.languageButton} ${selectedLocale === locale ? styles.selectedLanguage : styles.selectedNotLanguage}`}
+                className={`${styles.languageButton} ${pathSegments === locale ? styles.selectedLanguage : styles.selectedNotLanguage}`}
                 onClick={() => setSelectedLocale(locale)}
               >
                 <span>{locale.toUpperCase()}</span>
