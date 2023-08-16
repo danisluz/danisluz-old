@@ -32,7 +32,7 @@
   "page.experiencies.experience1.title": "Developer Front End",
   "page.experiencies.experience1.name": "Mirante Tecnologia S/A | Juin 2022 - Actuel",
   "page.experiencies.experience1.type": "Full time",
-  "page.experiencies.experience1.description": "I work in the front-end development and maintenance teams of Barcorbrás and INCRA.GOV clients. Using Angular 8+ framework, guards, services, model, interface, routes, modules, pipe, interceptor and http client, Clean Code, Git, Code Review, Git Flow versioning and the agile Scrum methodology.",
+  "page.experiencies.experience1.description": "I work in the front-end development and maintenance teams of Barcorbrás and INCRA.GOV clients. Using Angular framework, guards, services, model, interface, routes, modules, pipe, interceptor and http client, Clean Code, Git, Code Review, Git Flow versioning and the agile Scrum methodology.",
 
   "page.experiencies.experience2.title": "Developer Full Steck",
   "page.experiencies.experience2.name": "Barake Digital | 2015 - 2022",
@@ -73,7 +73,7 @@
   "page.expertises8.description": "Experience in Back-End development with Java and Spring Boot. Knowledge of query management, database connections, and advanced features such as security and session management.",
 
   "page.contact.title": "Contact",
-  "page.contact.caption": "What's your story? Get in touch",
+  "page.contact.caption": "Would you like to get to know me better or discuss opportunities? Contact!",
   "page.contact.text": "Do not hesitate to contact me",
   "page.contact.titleForm": "To say something",
   "page.contact.button": "Send the message",

@@ -3,6 +3,10 @@ import { activeSection } from "../utilits";
 import { FormattedMessage, useIntl } from 'react-intl';
 import { useRouter } from 'next/router'
 
+import styles from '../styles/Home.module.css'
+import Link from "next/link"
+
+
 const Header = ({ blog }) => {
   const { locales } = useRouter();
   const intl = useIntl();
@@ -29,8 +33,6 @@ const Header = ({ blog }) => {
           </button>
         </div>
       </div>
-      {/* End Header */}
-      {/* nav bar */}
       <header
         className={`header-left ${
           sideBarToggle ? "menu-open menu-open-desk" : ""
@@ -40,12 +42,12 @@ const Header = ({ blog }) => {
           <div className="hl-top">
             <div className="hl-logo">
               <div className="img">
-                <img src="static/img/about-me.jpg" title="" alt="" />
+                <img src="static/img/about-me.jpg" title="Daniel Luz" alt="Image Daniel Luz" />
               </div>
               <h5>Daniel Luz</h5>
             </div>
           </div>
-          {blog ? <MenuWithBlog /> : <MenuWithOutBlog locales={locales} />}
+          {blog ? <MenuWithBlog /> : <MenuWithOutBlog locales={locales} setSideBarToggle={setSideBarToggle} sideBarToggle={sideBarToggle} />}
         </div>
         <div className="nav justify-content-center social-icons">
           <a href="https://www.facebook.com/danielsluz" target="_blank">
@@ -68,14 +70,18 @@ const Header = ({ blog }) => {
 
 export default Header;
 
-const MenuWithOutBlog = ({ locales }) => {
+const MenuWithOutBlog = ({ locales, setSideBarToggle, sideBarToggle  }) => {
   const intl = useIntl();
   const [selectedLocale, setSelectedLocale] = useState("fr");
   
   return (
     <ul className="nav nav-menu" id="pp-menu">
       <li data-menuanchor="home" className="active">
-        <a className="nav-link" href="#home">
+        <a 
+          href="#home" 
+          className="nav-link"
+          onClick={() => setSideBarToggle(!sideBarToggle)}
+        >
           <i className="ti-home" />
           <span>
             <FormattedMessage id="header.home" />
@@ -83,7 +89,7 @@ const MenuWithOutBlog = ({ locales }) => {
         </a>
       </li>
       <li data-menuanchor="about">
-        <a className="nav-link" href="#about">
+        <a className="nav-link" href="#about" onClick={() => setSideBarToggle(!sideBarToggle)}>
           <i className="ti-id-badge" />
           <span>
             <FormattedMessage id="header.about" />
@@ -91,7 +97,7 @@ const MenuWithOutBlog = ({ locales }) => {
         </a>
       </li>
       <li data-menuanchor="about">
-        <a className="nav-link" href="#experience">
+        <a className="nav-link" href="#experience" onClick={() => setSideBarToggle(!sideBarToggle)}>
           <i className="ti-bookmark-alt" />
           <span>
             <FormattedMessage id="header.experiences" />
@@ -99,7 +105,7 @@ const MenuWithOutBlog = ({ locales }) => {
         </a>
       </li>
       <li data-menuanchor="services">
-        <a className="nav-link" href="#expertise">
+        <a className="nav-link" href="#expertise" onClick={() => setSideBarToggle(!sideBarToggle)}>
           <i className="ti-panel" />
           <span>
             <FormattedMessage id="header.expertises" />
@@ -107,7 +113,7 @@ const MenuWithOutBlog = ({ locales }) => {
         </a>
       </li>
       <li data-menuanchor="contactus">
-        <a className="nav-link" href="#contactus">
+        <a className="nav-link" href="#contactus" onClick={() => setSideBarToggle(!sideBarToggle)}>
           <i className="ti-map-alt" />
           <span>
             <FormattedMessage id="header.contact" />
@@ -115,7 +121,7 @@ const MenuWithOutBlog = ({ locales }) => {
         </a>
       </li>
 
-      {/* <li data-menuanchor="contactus">
+      <li data-menuanchor="contactus">
         <div className={styles.translationHeader}>
           {locales.map((locale) => (
             <Link key={locale} href="/" locale={locale}>
@@ -123,31 +129,15 @@ const MenuWithOutBlog = ({ locales }) => {
                 className={`${styles.languageButton} ${
                   selectedLocale === locale ? styles.selectedLanguage : ""
                 }`}
-                onClick={() => setSelectedLocale(locale)}
+                onClick={() => {setSelectedLocale(locale); setSideBarToggle(!sideBarToggle)}}
               >
                 <span>{locale.toUpperCase()}</span>
               </div>
             </Link>
           ))}
         </div>
-      </li> */}
+      </li>
 
     </ul>
-  );
-};
-
-const MenuWithBlog = () => {
-  useEffect(() => {
-    window.addEventListener("scroll", () =>
-      document.querySelector(".blog").classList.add("active")
-    );
-  }, []);
-
-  return (
-    <Fragment>
-      <ul className="nav nav-menu" id="pp-menu">
-        {/* ... outras entradas de menu ... */}
-      </ul>
-    </Fragment>
   );
 };

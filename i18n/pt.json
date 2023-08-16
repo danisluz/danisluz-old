@@ -32,7 +32,7 @@
   "page.experiencies.experience1.title": "Desenvolvedor Front End",
   "page.experiencies.experience1.name": "Mirante Tecnologia S/A | Junho 2022 - Atualidade",
   "page.experiencies.experience1.type": "Tempo Integral",
-  "page.experiencies.experience1.description": "Atuo nas equipes de desenvolvimento e manutenção front-end dos clientes Barcorbrás e INCRA.GOV. Utilizando framework Angular 8+, guardas, serviços, modelo, interface, rotas, módulos, pipe, interceptor e cliente http, Clean Code, Git, Code Review, versionamento Git Flow e a metodologia ágil Scrum.",
+  "page.experiencies.experience1.description": "Atuo nas equipes de desenvolvimento e manutenção front-end dos clientes Barcorbrás e INCRA.GOV. Utilizando framework Angular, guardas, serviços, modelo, interface, rotas, módulos, pipe, interceptor e cliente http, Clean Code, Git, Code Review, versionamento Git Flow e a metodologia ágil Scrum.",
 
   "page.experiencies.experience2.title": "Desenvolvedor Full Stack",
   "page.experiencies.experience2.name": "Barake Digital | 2015 - 2022",
@@ -73,7 +73,7 @@
   "page.expertises8.description": "Experiência em desenvolvimento Back-End com Java e Spring Boot. Conhecimento de gerenciamento de consultas, conexões de banco de dados e recursos avançados, como segurança e gerenciamento de sessões.",
 
   "page.contact.title": "Contato",
-  "page.contact.caption": "Qual a sua história? Entre em contato",
+  "page.contact.caption": "Gostaria de me conhecer melhor ou discutir oportunidades? Entre em contato!",
   "page.contact.text": "Não hesite em contactar-me",
   "page.contact.titleForm": "Diga algo",
   "page.contact.button": "Enviar mensagem",

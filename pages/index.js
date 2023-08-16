@@ -139,21 +139,6 @@ export default function Home({ dir }) {
         <Expertise />
         <Contact />
       </Layout>
-
-      <main dir={dir} className={styles.main}>
-        <h1>
-          <FormattedMessage
-            id="page.home.title"
-            values={{ b: (info) => <b>{info}</b> }}
-          />
-        </h1>
-        <p className={styles.description}>
-          <FormattedMessage
-            id="page.home.description"
-            values={{ b: (info) => <b>{info}</b> }}
-          />
-        </p>
-      </main>
     </>
   );
 }

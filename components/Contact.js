@@ -83,17 +83,21 @@ const Contact = () => {
               <ul>
                 <li className="media">
                   <i className="ti-map" />
-                  <span className="media-body">
-                    Montreal, QC , Canadá.
-                  </span>
+                  <a href="https://www.google.com/maps/place/Southwest,+Montreal,+QC/@45.4679731,-73.6274085,13z/data=!3m1!4b1!4m6!3m5!1s0x4cc9108e59910e91:0xc6101958db39d282!8m2!3d45.4705592!4d-73.5907861!16zL20vMDVfM2ts?entry=ttu" target="_blank">
+                    <span className="media-body">Sud-Ouest, MTL, QC, Canada</span>
+                  </a>
                 </li>
                 <li className="media">
                   <i className="ti-email" />
-                  <span className="media-body">danisluz@gmail.com</span>
+                  <a href="mailto:danisluz@gmail.com" target="_blank">
+                    <span className="media-body">danisluz@gmail.com</span>
+                  </a>
                 </li>
                 <li className="media">
                   <i className="ti-mobile" />
-                  <span className="media-body">+1 438 365 3251</span>
+                  <a href="tel:+14383653251" target="_blank">
+                    <span className="media-body">+1 438 365 3251</span>
+                  </a>
                 </li>
               </ul>
             </div>
