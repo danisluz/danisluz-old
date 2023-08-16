@@ -73,6 +73,8 @@ export default Header;
 const MenuWithOutBlog = ({ locales, setSideBarToggle, sideBarToggle  }) => {
   const intl = useIntl();
   const [selectedLocale, setSelectedLocale] = useState("fr");
+  const pathSegments = useRouter().locale;
+
   
   return (
     <ul className="nav nav-menu" id="pp-menu">
@@ -127,7 +129,7 @@ const MenuWithOutBlog = ({ locales, setSideBarToggle, sideBarToggle  }) => {
             <Link key={locale} href="/" locale={locale}>
               <div
                 className={`${styles.languageButton} ${
-                  selectedLocale === locale ? styles.selectedLanguage : styles.selectedNotLanguage
+                  pathSegments === locale ? styles.selectedLanguage : styles.selectedNotLanguage
                 }`}
                 onClick={() => {setSelectedLocale(locale); setSideBarToggle(!sideBarToggle)}}
               >
