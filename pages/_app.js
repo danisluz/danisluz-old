@@ -1,4 +1,4 @@
-import '@/styles/globals.css'
+import '../styles/globals.css'
 import { useRouter } from 'next/router'
 import { IntlProvider } from 'react-intl'
 import { useEffect, useState } from "react";
