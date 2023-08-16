@@ -1,6 +1,9 @@
 import Head from 'next/head'
 import { useState } from "react";
 import styles from '../styles/Home.module.css'
+
+
+
 import { useRouter } from 'next/router'
 import { FormattedMessage, useIntl } from 'react-intl'
 import Link from "next/link"
@@ -33,47 +36,8 @@ export default function Home({ dir }) {
         <link rel="icon" href="/favicon.ico" hrefLang="en" />
         <link rel="icon" href="/favicon.ico" hrefLang="pt" />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-
-        {/* <!-- plugin CSS --> */}
-        <link
-          rel="stylesheet"
-          href="static/plugin/bootstrap/css/bootstrap.min.css"
-        />
-        <link
-          rel="stylesheet"
-          href="static/plugin/font-awesome/css/all.min.css"
-        />
-        <link href="static/plugin/et-line/style.css" rel="stylesheet" />
-        <link
-          rel="stylesheet"
-          href="static/plugin/themify-icons/themify-icons.css"
-        />
-        <link
-          rel="stylesheet"
-          href="static/plugin/owl-carousel/css/owl.carousel.min.css"
-        />
-        <link
-          rel="stylesheet"
-          href="static/plugin/magnific/magnific-popup.css"
-        />
-        <link
-          rel="stylesheet"
-          href="static/plugin/scroll/jquery.mCustomScrollbar.min.css"
-        />
-        {/* <!-- theme css --> */}
-        <link href="./static/css/style.css" rel="stylesheet" />
-
-        <link
-          href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-          rel="stylesheet"
-        />
       </Head>
       <header>
-
 
         <div className={styles.translation}>
 

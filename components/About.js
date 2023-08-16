@@ -18,7 +18,7 @@ const About = () => {
             <div className="about-me">
               <div className="img">
                 <div className="img-in">
-                  <img src="static/img/about-me.png" title="" alt="" />
+                  <img src="static/img/about-me.png" title="Computer man" alt="Computer man" />
                 </div>
               </div>
             </div>
@@ -27,18 +27,18 @@ const About = () => {
             <div className="about-info">
               <div className="title">
                 <h3>
-                  <FormattedMessage id="page.about.aboutMe.title" /> .
+                  <FormattedMessage id="page.about.aboutMe.title" />
                 </h3>
               </div>
               <div className="about-text">
                 <h3>
-                  <FormattedMessage id="page.about.aboutMe.text1" /> .
+                  <FormattedMessage id="page.about.aboutMe.text1" />
                 </h3>
                 <p>
-                  <FormattedMessage id="page.about.aboutMe.text2" /> .
+                  <FormattedMessage id="page.about.aboutMe.text2" />
                 </p>
                 <p>
-                  <FormattedMessage id="page.about.aboutMe.text3" /> .
+                  <FormattedMessage id="page.about.aboutMe.text3" />
                 </p>
               </div>
             </div>
@@ -58,19 +58,19 @@ const About = () => {
               <li>
                 <span>2013-2015</span>
                 <h6>
-                  <FormattedMessage id="page.about.educationSkills.education1.title" /> .
+                  <FormattedMessage id="page.about.educationSkills.education1.title" />
                 </h6>
                 <p>
-                  <FormattedMessage id="page.about.educationSkills.education1.description" /> .
+                  <FormattedMessage id="page.about.educationSkills.education1.description" />
                 </p>
               </li>
               <li>
                 <span>2007-2008</span>
                 <h6>
-                  <FormattedMessage id="page.about.educationSkills.education2.title" /> .
+                  <FormattedMessage id="page.about.educationSkills.education2.title" />
                 </h6>
                 <p>
-                  <FormattedMessage id="page.about.educationSkills.education2.description" /> .
+                  <FormattedMessage id="page.about.educationSkills.education2.description" />
                 </p>
               </li>
             </ul>
@@ -78,7 +78,7 @@ const About = () => {
           <div className="col-lg-7 ml-auto m-15px-tb">
             <div className="skills-box">
               <h3>
-                <FormattedMessage id="page.about.educationSkills.skills.title" /> .
+                <FormattedMessage id="page.about.educationSkills.skills.title" />
               </h3>
               <div className="skill-lt">
                   <h6>HTML 5</h6>
