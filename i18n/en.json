@@ -6,6 +6,7 @@
   "page.home.office": "Developer",
   "page.home.text": "I am a Full Stack Developer passionate about technology and innovation, with a solid experience in the fields of web design and development.",
   "page.home.button": "Download CV",
+  "page.home.pdf": "static/pdf/curriculum-developpeur-en.pdf",
   "page.home.description": "EN.",
 
   "page.about.aboutMe.title": "About me",

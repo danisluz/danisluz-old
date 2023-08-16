@@ -127,7 +127,7 @@ const MenuWithOutBlog = ({ locales, setSideBarToggle, sideBarToggle  }) => {
             <Link key={locale} href="/" locale={locale}>
               <div
                 className={`${styles.languageButton} ${
-                  selectedLocale === locale ? styles.selectedLanguage : ""
+                  selectedLocale === locale ? styles.selectedLanguage : styles.selectedNotLanguage
                 }`}
                 onClick={() => {setSelectedLocale(locale); setSideBarToggle(!sideBarToggle)}}
               >

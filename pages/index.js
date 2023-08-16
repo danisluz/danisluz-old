@@ -1,9 +1,6 @@
 import Head from 'next/head'
 import { useState } from "react";
 import styles from '../styles/Home.module.css'
-
-
-
 import { useRouter } from 'next/router'
 import { FormattedMessage, useIntl } from 'react-intl'
 import Link from "next/link"
@@ -20,9 +17,9 @@ export default function Home({ dir }) {
   const { locales } = useRouter();
   const intl = useIntl();
   const title = intl.formatMessage({ id: "page.home.head.title"})
+  const pdfCurriculum = intl.formatMessage({ id: "page.home.pdf"})
   const description = intl.formatMessage({ id: "page.home.head.meta.description"})
   const [selectedLocale, setSelectedLocale] = useState("fr");
-
 
   return (
     <>
@@ -38,24 +35,19 @@ export default function Home({ dir }) {
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
       </Head>
       <header>
-
         <div className={styles.translation}>
-
           {locales.map((locale) => (
             <Link key={locale} href="/" locale={locale}>
               <div 
-                className={`${styles.languageButton} ${selectedLocale === locale ? styles.selectedLanguage : ""}`}
+                className={`${styles.languageButton} ${selectedLocale === locale ? styles.selectedLanguage : styles.selectedNotLanguage}`}
                 onClick={() => setSelectedLocale(locale)}
               >
                 <span>{locale.toUpperCase()}</span>
               </div>
             </Link>
           ))}
-          
         </div>
-        
       </header>
-
       <Layout>
         <section
           id="home"
@@ -79,7 +71,7 @@ export default function Home({ dir }) {
                     <div className="btn-bar">
                       <a
                         className="px-btn px-btn-theme"
-                        href="static/pdf/curriculum-developpeur-full-stack.pdf"
+                        href={pdfCurriculum}
                         target="_blank"
                       >
                         <FormattedMessage id="page.home.button" values={{ b: (info) => <b>{info}</b> }}/>
